@@ -12,4 +12,4 @@ The key can be froun from here [Fingrid api key ](https://data.fingrid.fi/open-d
 
 Add the secret to a folder .streamlit/secres.toml
 
-Streamlit documentation: Link text](https://docs.streamlit.io/)
+Streamlit documentation: [Streamlit doc](https://docs.streamlit.io/)
