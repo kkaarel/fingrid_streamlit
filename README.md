@@ -13,3 +13,20 @@ The key can be froun from here [Fingrid api key ](https://data.fingrid.fi/open-d
 Add the secret to a folder .streamlit/secres.toml
 
 Streamlit documentation: [Streamlit doc](https://docs.streamlit.io/)
+
+
+## Run the code
+
+Go to terminal: 
+
+```
+git clone https://github.com/kkaarel/fingrid_streamlit.git
+
+```
+
+Run the app
+
+```
+streamlit run fingrid.py
+
+```
