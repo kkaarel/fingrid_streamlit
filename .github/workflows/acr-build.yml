@@ -30,4 +30,4 @@ jobs:
         run: docker tag ${{ env.IMAGE_NAME }} streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:latest
 
       - name: Push Docker image
-        run: docker push streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        run: docker push streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:latest
