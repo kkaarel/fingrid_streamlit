@@ -54,6 +54,11 @@ jobs:
           name: python-app
           path: .
           
+      - name: Generate secrets.toml file
+        run: |
+          echo "[secrets]" > /.streamlit/secrets.toml
+          echo "apikey = '${{ secrets.API_KEY }}'" >> /streamlit/secrets.toml  
+        
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
