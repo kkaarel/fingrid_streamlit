@@ -4,7 +4,6 @@ import pandas as pd
 from datetime import datetime, date, timedelta
 import streamlit as st
 
-
 #Fingrid api instructions  https://data.fingrid.fi/en/pages/apis
 
 #Get your own api key from https://data.fingrid.fi/open-data-forms/registration/
