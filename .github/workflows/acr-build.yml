@@ -29,7 +29,6 @@ jobs:
       - name: Tag Docker image
         run: |
           docker tag ${{ env.IMAGE_NAME }} streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:latest
-          docker rmi streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:latest || true
 
       - name: Push Docker image
         run: docker push streamlitinfradev.azurecr.io/${{ env.IMAGE_NAME }}:latest
