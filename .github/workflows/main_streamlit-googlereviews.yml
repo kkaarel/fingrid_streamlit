@@ -58,6 +58,8 @@ jobs:
         run: |
           echo "[secrets]" > .streamlit/secrets.toml
           echo "apikey = '${{ secrets.API_KEY }}'" >> .streamlit/secrets.toml  
+      - name: Check that the secret is created
+        run: cat .streamlit/secrets.toml
         
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
