@@ -33,7 +33,7 @@ jobs:
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Generate secrets.toml file
         run: |
-          echo "[secrets]" > .streamlit/secrets.toml
+
           echo "apikey = \"$(echo -e "${{ secrets.API_KEY }}")\"" >> .streamlit/secrets.toml  
       
       - name: Upload artifact for deployment jobs
